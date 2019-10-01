@@ -55,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:hint="Contraseña"
+                android:inputType="textPassword"
                 android:textAlignment="textStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="14sp" />
