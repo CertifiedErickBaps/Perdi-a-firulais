@@ -7,7 +7,7 @@
         tools:context=".MainActivity">
 
     <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imgLogo"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_alignParentStart="true"
@@ -22,7 +22,7 @@
             android:id="@+id/textInputLayout2"
             android:layout_width="match_parent"
             android:layout_height="59dp"
-            android:layout_below="@+id/imageView"
+            android:layout_below="@+id/imgLogo"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="55dp"
@@ -30,9 +30,12 @@
             android:layout_marginEnd="55dp">
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Usuario"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="14sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -48,10 +51,12 @@
             android:layout_marginEnd="55dp">
 
         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etContraseña"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:hint="Contraseña"
-                android:textAlignment="center"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="14sp" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -98,5 +103,133 @@
             android:textAllCaps="false"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#303F9F" />
+
+    <ImageView
+            android:id="@+id/imgHueso"
+            android:layout_width="wrap_content"
+            android:layout_height="209dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-86dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="241dp"
+            android:layout_marginBottom="515dp"
+            android:alpha="0.7"
+            android:rotation="490"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso2"
+            android:layout_width="244dp"
+            android:layout_height="216dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-67dp"
+            android:layout_marginTop="-24dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="539dp"
+            android:alpha="0.7"
+            android:rotation="500"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso3"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="281dp"
+            android:layout_marginTop="234dp"
+            android:layout_marginEnd="-90dp"
+            android:layout_marginBottom="324dp"
+            android:alpha="0.7"
+            android:rotation="470"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso6"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="231dp"
+            android:layout_marginTop="560dp"
+            android:layout_marginEnd="-40dp"
+            android:layout_marginBottom="-2dp"
+            android:alpha="0.7"
+            android:rotation="560"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso8"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-73dp"
+            android:layout_marginTop="352dp"
+            android:layout_marginEnd="264dp"
+            android:layout_marginBottom="206dp"
+            android:alpha="0.7"
+            android:rotation="560"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso4"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="257dp"
+            android:layout_marginEnd="-73dp"
+            android:layout_marginBottom="301dp"
+            android:alpha="0.7"
+            android:rotation="450"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso5"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="227dp"
+            android:layout_marginTop="586dp"
+            android:layout_marginEnd="-36dp"
+            android:layout_marginBottom="-28dp"
+            android:alpha="0.7"
+            android:rotation="580"
+            app:srcCompat="@drawable/bone" />
+
+    <ImageView
+            android:id="@+id/imgHueso7"
+            android:layout_width="220dp"
+            android:layout_height="173dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-74dp"
+            android:layout_marginTop="404dp"
+            android:layout_marginEnd="265dp"
+            android:layout_marginBottom="154dp"
+            android:alpha="0.7"
+            android:rotation="580"
+            app:srcCompat="@drawable/bone" />
 
 </RelativeLayout>
