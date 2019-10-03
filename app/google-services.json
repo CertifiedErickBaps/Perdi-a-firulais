@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "804530197012",
+    "firebase_url": "https://perdiafirulais.firebaseio.com",
+    "project_id": "perdiafirulais",
+    "storage_bucket": "perdiafirulais.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804530197012:android:4cdf8fef8caeecc781cd01",
+        "android_client_info": {
+          "package_name": "mx.itesm.perdifirulais"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804530197012-jfnjljmn25dn0mbesmkj8of7jlga9quc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.itesm.perdifirulais",
+            "certificate_hash": "baf86dd917d6a7b58976e66d598caf9dacf6ef02"
+          }
+        },
+        {
+          "client_id": "804530197012-p9unr1ciqrq9cp6rc73n2oghrtvgnkal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCw3onYQvTxB3vcrfUVNA_N7VHwk3IWyy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "804530197012-p9unr1ciqrq9cp6rc73n2oghrtvgnkal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
