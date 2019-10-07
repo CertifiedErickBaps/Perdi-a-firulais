@@ -70,7 +70,7 @@
             android:layout_width="97dp"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
-            android:text="Ingresar"
+            android:text="Registrar"
             android:textColor="@color/design_default_color_primary_dark"
             app:layout_constraintEnd_toEndOf="@+id/checkboxTerminosyCondiciones"
             app:layout_constraintStart_toStartOf="@+id/checkboxTerminosyCondiciones"

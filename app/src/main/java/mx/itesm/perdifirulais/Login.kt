@@ -9,9 +9,10 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.etMail
 import kotlinx.android.synthetic.main.activity_main.etPassword
 import kotlinx.android.synthetic.main.activity_register.*
+import kotlinx.coroutines.selects.SelectInstance
 
 
-class MainActivity : AppCompatActivity() {
+class Login : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,6 +23,25 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
         }
+
+        mAuth = FirebaseAuth.getInstance()
+
+
+
+        btnIngresar.setOnClickListener{
+            login()
+        }
+    }
+
+
+    private fun login(){
+        mAuth.signInWithEmailAndPassword(etMail.text.toString(),etPassword.text.toString())
+            .addOnCompleteListener(this){
+                task ->
+                if (task.isSuccessful){
+                        startActivity(Intent(this, Seleccion::class.java))
+                }
+            }
     }
 
 

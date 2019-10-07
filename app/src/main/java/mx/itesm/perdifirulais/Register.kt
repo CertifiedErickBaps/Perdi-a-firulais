@@ -17,10 +17,27 @@ class Register : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-        checkboxTerminosyCondiciones.setOnClickListener{
-            TODO()
-        }
+        manejarTerminos()
+        manejarRegistro()
 
+
+    }
+
+    fun manejarTerminos(){
+
+        checkboxTerminosyCondiciones.setOnClickListener {
+            if (checkboxTerminosyCondiciones.isChecked){
+                !checkboxTerminosyCondiciones.isChecked
+                return@setOnClickListener
+            }
+            else{
+                checkboxTerminosyCondiciones.isChecked
+                return@setOnClickListener
+            }
+        }
+    }
+
+    fun manejarRegistro(){
 
         btnIngresarRegistro.setOnClickListener{
             if(etUser.text.toString().isBlank() || etMail.text.toString().isBlank() || etPassword.text.toString().isBlank() || etRPassword.text.toString().isBlank()){
@@ -39,23 +56,27 @@ class Register : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+            else{
+                mAuth.createUserWithEmailAndPassword(etMail.text.toString(), etPassword.text.toString())
+                    .addOnCompleteListener(this
+                    ) { task ->
+                        if (task.isSuccessful) {
+                            // Sign in success, update UI with the signed-in user's information
+                            Log.d("_Register", "createUserWithEmail:success")
+                            val user = mAuth.currentUser
+                            
+                        } else {
+                            // If sign in fails, display a message to the user.
 
-
-            mAuth.createUserWithEmailAndPassword(etMail.text.toString(), etPassword.text.toString())
-                .addOnCompleteListener(this
-                ) { task ->
-                    if (task.isSuccessful) {
-                        // Sign in success, update UI with the signed-in user's information
-                        Log.d("_Register", "createUserWithEmail:success")
-                        val user = mAuth.currentUser
-                    } else {
-                        // If sign in fails, display a message to the user.
-
-                        Log.d("_Register", "createUserWithEmail:failure", task.exception)
-                        Toast.makeText(this, "El registro fallo.",
-                            Toast.LENGTH_SHORT).show()
+                            Log.d("_Register", "createUserWithEmail:failure", task.exception)
+                            Toast.makeText(this, "El registro fallo. ${task.exception}",
+                                Toast.LENGTH_SHORT).show()
+                        }
                     }
-                }
+
+            }
+
+
 
         }
 
