@@ -18,20 +18,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnInfo.setOnClickListener {
-            Log.d("_Log_","SI LE PUCHO Y FUNCA")
-        }
-
-        mAuth = FirebaseAuth.getInstance()
-
-        btnIngresar.setOnClickListener {
-            //Log.d("Email", etUsuario.text.toString())
-            if(etMail.toString().isEmpty() || etPassword.toString().isEmpty()){
-                return@setOnClickListener
-            }
-            else{
-            }
-        }
         btnRegistro.setOnClickListener{
             val intent = Intent(this, Register::class.java)
             startActivity(intent)
