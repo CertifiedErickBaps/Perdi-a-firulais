@@ -5,14 +5,15 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.menu.Register">
+        tools:context=".Register">
 
     <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content" android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/bonesback"/>
     <ImageView
             android:id="@+id/imgLogo2"
@@ -23,49 +24,54 @@
             android:layout_marginEnd="80dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/icon"/>
-    <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="59dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="50dp" android:layout_marginEnd="24dp"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgLogo2">
-
-        <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etMail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Correo"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="14sp"/>
-    </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
+    <EditText
+            android:id="@+id/etUser"
             android:layout_width="0dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
-            app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-        <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPassword"
-                android:layout_width="match_parent"
-                android:layout_height="47dp"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:textAlignment="textStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="14sp"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" tools:layout_editor_absoluteY="305dp"/>
+    <EditText
+            android:id="@+id/etMail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:ems="10"
+            android:hint="Correo Electronico" android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/etUser" app:layout_constraintStart_toStartOf="@+id/etUser"
+            app:layout_constraintTop_toBottomOf="@+id/etUser"/>
+    <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:ems="10"
+            android:hint="Contrasena" android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/etMail" app:layout_constraintStart_toStartOf="@+id/etMail"
+            app:layout_constraintTop_toBottomOf="@+id/etMail"/>
+    <EditText
+            android:id="@+id/etRPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:ems="10"
+            android:hint="Repetir Contrasena" android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/etPassword" app:layout_constraintStart_toStartOf="@+id/etPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword"/>
+    <CheckBox
+            android:id="@+id/checkboxTerminosyCondiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Terminos y Condiciones"
+            app:layout_constraintEnd_toEndOf="@+id/etRPassword" app:layout_constraintStart_toStartOf="@+id/etRPassword"
+            app:layout_constraintTop_toBottomOf="@+id/etRPassword"/>
     <Button
-            android:id="@+id/btnIngresar2"
+            android:id="@+id/btnIngresarRegistro"
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
             android:layout_width="97dp"
             android:layout_height="35dp"
-            android:text="Ingresar" android:textColor="@color/design_default_color_primary_dark"
-            tools:layout_editor_absoluteX="146dp" tools:layout_editor_absoluteY="680dp"/>
+            android:layout_marginTop="8dp"
+            android:text="Ingresar"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:layout_constraintEnd_toEndOf="@+id/checkboxTerminosyCondiciones"
+            app:layout_constraintStart_toStartOf="@+id/checkboxTerminosyCondiciones"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxTerminosyCondiciones"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
