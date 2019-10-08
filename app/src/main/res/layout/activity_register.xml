@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Register">
+        tools:context=".Auth.Register">
 
     <ImageView
             android:id="@+id/imageView2"
@@ -64,15 +64,16 @@
             android:layout_marginTop="16dp" android:text="Terminos y Condiciones"
             app:layout_constraintEnd_toEndOf="@+id/etRPassword" app:layout_constraintStart_toStartOf="@+id/etRPassword"
             app:layout_constraintTop_toBottomOf="@+id/etRPassword"/>
+
     <Button
             android:id="@+id/btnIngresarRegistro"
             style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
-            android:layout_width="97dp"
+            android:layout_width="wrap_content"
             android:layout_height="35dp"
             android:layout_marginTop="8dp"
             android:text="Registrar"
             android:textColor="@color/design_default_color_primary_dark"
             app:layout_constraintEnd_toEndOf="@+id/checkboxTerminosyCondiciones"
             app:layout_constraintStart_toStartOf="@+id/checkboxTerminosyCondiciones"
-            app:layout_constraintTop_toBottomOf="@+id/checkboxTerminosyCondiciones"/>
+            app:layout_constraintTop_toBottomOf="@+id/checkboxTerminosyCondiciones" />
 </androidx.constraintlayout.widget.ConstraintLayout>

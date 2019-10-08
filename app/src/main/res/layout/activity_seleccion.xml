@@ -7,4 +7,70 @@
         android:layout_height="match_parent"
         tools:context=".Seleccion">
 
+    <Button
+            android:id="@+id/btnInfo2"
+            android:layout_width="43dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/btn_rounded"
+            android:text="i"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#303F9F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/bonesback" />
+
+    <ImageView
+            android:id="@+id/imgLogo3"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="80dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon" />
+
+    <Button
+            android:id="@+id/btnEncontre"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="64dp"
+            android:text="Encontre un perrito"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgLogo3" />
+
+    <Button
+            android:id="@+id/btnBusco"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="32dp"
+            android:text="Busco un perrito"
+            android:textColor="@color/design_default_color_primary_dark"
+            app:layout_constraintEnd_toEndOf="@+id/btnEncontre"
+            app:layout_constraintStart_toStartOf="@+id/btnEncontre"
+            app:layout_constraintTop_toBottomOf="@+id/btnEncontre" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

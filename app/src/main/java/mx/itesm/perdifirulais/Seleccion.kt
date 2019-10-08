@@ -1,10 +1,10 @@
 package mx.itesm.perdifirulais
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import mx.itesm.perdifirulais.Auth.Login
 
 class Seleccion : AppCompatActivity() {
 
@@ -19,9 +19,9 @@ class Seleccion : AppCompatActivity() {
 
     }
 
-    private fun verificarLog(){
+    private fun verificarLog() {
         val uid = FirebaseAuth.getInstance().uid
-        if (uid == null){
+        if (uid == null) {
             val intent = Intent(this, Login::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
